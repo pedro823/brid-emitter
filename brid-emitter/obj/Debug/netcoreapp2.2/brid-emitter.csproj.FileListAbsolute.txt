@@ -1,0 +1,14 @@
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/bin/Debug/netcoreapp2.2/brid-emitter.deps.json
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/bin/Debug/netcoreapp2.2/brid-emitter.runtimeconfig.json
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/bin/Debug/netcoreapp2.2/brid-emitter.runtimeconfig.dev.json
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/bin/Debug/netcoreapp2.2/brid-emitter.dll
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/bin/Debug/netcoreapp2.2/brid-emitter.pdb
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.csprojAssemblyReference.cache
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.csproj.CoreCompileInputs.cache
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.RazorAssemblyInfo.cache
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.RazorAssemblyInfo.cs
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.AssemblyInfoInputs.cache
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.AssemblyInfo.cs
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.RazorTargetAssemblyInfo.cache
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.dll
+/Users/razgrizone/dotnet/brid-emitter/brid-emitter/obj/Debug/netcoreapp2.2/brid-emitter.pdb
