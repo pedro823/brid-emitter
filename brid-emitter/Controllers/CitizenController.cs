@@ -19,7 +19,13 @@ namespace brid_emitter.Controllers
         [HttpGet("/id/{id}")]
         public async Task<IActionResult> FetchCitizen(CancellationToken cancellationToken, string id = null)
         {
-            return Ok();
+            if (id == null)
+            {
+                return BadRequest("Must include id");
+            }
+
+            var citizen = await FoundationDbConnector.Get<Citizen>(id, cancellationToken);
+            return Ok(citizen);
         }
 
         [HttpPost("/id")]
@@ -34,7 +40,16 @@ namespace brid_emitter.Controllers
             }
 
             await FoundationDbConnector.Set(citizen.Uuid, citizen, cancellationToken);
-            return Ok();
+            return Ok(new CreateCitizenResponse(citizen.Uuid));
+        }
+    }
+
+    public class CreateCitizenResponse
+    {
+        public string Uuid;
+        public CreateCitizenResponse(string citizenUuid)
+        {
+            Uuid = citizenUuid;
         }
     }
 }

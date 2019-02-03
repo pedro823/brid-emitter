@@ -3,7 +3,6 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using brid_emitter.Contracts;
 using FoundationDB.Client;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
@@ -69,7 +68,7 @@ namespace brid_emitter.Connectors
 
         public static T Decode<T>(Slice value)
         {
-            var deserializedValue = value.ToUnicode();
+            var deserializedValue = _unicode.GetString(value.GetBytes());
             return JsonConvert.DeserializeObject<T>(deserializedValue);
         }
     }
