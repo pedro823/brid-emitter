@@ -29,7 +29,7 @@ namespace brid_emitter.Util
 
             for (var i = 0; i < length; i++)
             {
-                uuidArray[i] = i % 3 == 0 && i != 0 
+                uuidArray[i] = i % 4 == 3
                     ? '.' 
                     : Alphabet[rng.Next(Alphabet.Length)];
             }
