@@ -1,5 +1,7 @@
 using System;
 using brid_emitter.Models;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace brid_emitter.Contracts
 {
@@ -25,6 +27,7 @@ namespace brid_emitter.Contracts
 
     public enum CivilStatus
     {
+        Unknown,
         Single,
         Married,
         Widow,

@@ -7,12 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FoundationDB.Client" Version="5.2.0-preview1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers" />
   </ItemGroup>
 
 </Project>

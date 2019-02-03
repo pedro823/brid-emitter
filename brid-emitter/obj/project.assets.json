@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "FoundationDB.Client/5.2.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FoundationDB.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FoundationDB.Client.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4287,18 +4299,13 @@
           "lib/netstandard1.3/System.Threading.Thread.dll": {}
         }
       },
-      "System.ValueTuple/4.3.0": {
+      "System.ValueTuple/4.5.0": {
         "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
         "compile": {
-          "lib/netstandard1.0/System.ValueTuple.dll": {}
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.0/System.ValueTuple.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Xml.ReaderWriter/4.3.0": {
@@ -4442,6 +4449,22 @@
     }
   },
   "libraries": {
+    "FoundationDB.Client/5.2.0-preview1": {
+      "sha512": "1LMxYOhTzIWLkUTxrXmJ6XA6sSgT9fF80H9hVf4qNw6t5GLYJo7s1XLpGMvrsjiZYT+amg9L+dgJhnHpf1oI7Q==",
+      "type": "package",
+      "path": "foundationdb.client/5.2.0-preview1",
+      "files": [
+        ".signature.p7s",
+        "foundationdb.client.5.2.0-preview1.nupkg.sha512",
+        "foundationdb.client.nuspec",
+        "lib/net461/FoundationDB.Client.dll",
+        "lib/net461/FoundationDB.Client.xml",
+        "lib/net471/FoundationDB.Client.dll",
+        "lib/net471/FoundationDB.Client.xml",
+        "lib/netstandard2.0/FoundationDB.Client.dll",
+        "lib/netstandard2.0/FoundationDB.Client.xml"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "AIgEc1up4pvH8kXy+eG1x4Qfqd6piAq3yk11pveCQXWNkkYoiKdflSmcJZuWcerdMcAaoF0xC/mWGoTW4vF4Dg==",
       "type": "package",
@@ -11725,20 +11748,48 @@
         "system.threading.thread.nuspec"
       ]
     },
-    "System.ValueTuple/4.3.0": {
-      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
+    "System.ValueTuple/4.5.0": {
+      "sha512": "xZtSZNEHGa+tGsKuP4sh257vxJ/yemShz4EusmomkynMzuEDDjVaErBNewpzEF6swUgbcrSQAX3ELsEp1zCOwA==",
       "type": "package",
-      "path": "system.valuetuple/4.3.0",
+      "path": "system.valuetuple/4.5.0",
       "files": [
         ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/.xml",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
         "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/.xml",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
         "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "system.valuetuple.4.3.0.nupkg.sha512",
-        "system.valuetuple.nuspec"
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Xml.ReaderWriter/4.3.0": {
@@ -12071,6 +12122,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "FoundationDB.Client >= 5.2.0-preview1",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0"
@@ -12115,6 +12167,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "FoundationDB.Client": {
+            "target": "Package",
+            "version": "[5.2.0-preview1, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
